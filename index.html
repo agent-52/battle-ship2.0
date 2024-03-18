@@ -1,4 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <script defer src="runtime.bundle.js"></script>
-  <script defer src="index.bundle.js"></script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+<body>
+  <h1>Battle Ship</h1>
+  <div class="boardContainer">
+    <div class="playerBoard">
+      <div class="row1">
+        <div class="cell0 cell"></div>
+        <div class="cell1 cell"></div>
+        <div class="cell2 cell"></div>
+        <div class="cell3 cell"></div>
+        <div class="cell4 cell"></div>
+        <div class="cell5 cell"></div>
+        <div class="cell6 cell"></div>
+        <div class="cell7 cell"></div>
+      </div>
+      <div class="row2">
+        <div class="cell9 cell"></div>
+        <div class="cell8 cell"></div>
+        <div class="cell10 cell"></div>
+        <div class="cell11 cell"></div>
+        <div class="cell12 cell"></div>
+        <div class="cell13 cell"></div>
+        <div class="cell14 cell"></div>
+        <div class="cell15 cell"></div>
+      </div>
+
+      <div class="row3">
+        <div class="cell17 cell"></div>
+        <div class="cell16 cell"></div>
+        <div class="cell18 cell"></div>
+        <div class="cell19 cell"></div>
+        <div class="cell20 cell"></div>
+        <div class="cell21 cell"></div>
+        <div class="cell22 cell"></div>
+        <div class="cell23 cell"></div>
+      </div>
+      <div class="row4">
+        <div class="cell24 cell"></div>
+        <div class="cell25 cell"></div>
+        <div class="cell26 cell"></div>
+        <div class="cell27 cell"></div>
+        <div class="cell28 cell"></div>
+        <div class="cell29 cell"></div>
+        <div class="cell30 cell"></div>
+        <div class="cell31 cell"></div>
+      </div>
+      <div class="row5">
+        <div class="cell32 cell"></div>
+        <div class="cell33 cell"></div>
+        <div class="cell34 cell"></div>
+        <div class="cell35 cell"></div>
+        <div class="cell36 cell"></div>
+        <div class="cell37 cell"></div>
+        <div class="cell38 cell"></div>
+        <div class="cell39 cell"></div>
+        
+      </div>
+      <div class="row6">
+        <div class="cell40 cell"></div>
+        <div class="cell41 cell"></div>
+        <div class="cell42 cell"></div>
+        <div class="cell43 cell"></div>
+        <div class="cell44 cell"></div>
+        <div class="cell45 cell"></div>
+        <div class="cell46 cell"></div>
+        <div class="cell47 cell"></div>
+        
+      </div>
+      <div class="row7">
+        <div class="cell48 cell"></div>
+        <div class="cell49 cell"></div>
+        <div class="cell50 cell"></div>
+        <div class="cell51 cell"></div>
+        <div class="cell52 cell"></div>
+        <div class="cell53 cell"></div>
+        <div class="cell54 cell"></div>
+        <div class="cell55 cell"></div>
+        
+      </div>
+      <div class="row8">
+        <div class="cell56 cell"></div>
+        <div class="cell57 cell"></div>
+        <div class="cell58 cell"></div>
+        <div class="cell59 cell"></div>
+        <div class="cell60 cell"></div>
+        <div class="cell61 cell"></div>
+        <div class="cell62 cell"></div>
+        <div class="cell63 cell"></div>
+        
+      </div>
+    </div>
+
+    <div class="aiBoard">
+      <div class="row1">
+        <div class="aicell0 cell"></div>
+        <div class="aicell1 cell"></div>
+        <div class="aicell2 cell"></div>
+        <div class="aicell3 cell"></div>
+        <div class="aicell4 cell"></div>
+        <div class="aicell5 cell"></div>
+        <div class="aicell6 cell"></div>
+        <div class="aicell7 cell"></div>
+      </div>
+      <div class="row2">
+        <div class="aicell9 cell"></div>
+        <div class="aicell8 cell"></div>
+        <div class="aicell10 cell"></div>
+        <div class="aicell11 cell"></div>
+        <div class="aicell12 cell"></div>
+        <div class="aicell13 cell"></div>
+        <div class="aicell14 cell"></div>
+        <div class="aicell15 cell"></div>
+      </div>
+
+      <div class="row3">
+        <div class="aicell17 cell"></div>
+        <div class="aicell16 cell"></div>
+        <div class="aicell18 cell"></div>
+        <div class="aicell19 cell"></div>
+        <div class="aicell20 cell"></div>
+        <div class="aicell21 cell"></div>
+        <div class="aicell22 cell"></div>
+        <div class="aicell23 cell"></div>
+      </div>
+      <div class="row4">
+        <div class="aicell24 cell"></div>
+        <div class="aicell25 cell"></div>
+        <div class="aicell26 cell"></div>
+        <div class="aicell27 cell"></div>
+        <div class="aicell28 cell"></div>
+        <div class="aicell29 cell"></div>
+        <div class="aicell30 cell"></div>
+        <div class="aicell31 cell"></div>
+      </div>
+      <div class="row5">
+        <div class="aicell32 cell"></div>
+        <div class="aicell33 cell"></div>
+        <div class="aicell34 cell"></div>
+        <div class="aicell35 cell"></div>
+        <div class="aicell36 cell"></div>
+        <div class="aicell37 cell"></div>
+        <div class="aicell38 cell"></div>
+        <div class="aicell39 cell"></div>
+        
+      </div>
+      <div class="row6">
+        <div class="aicell40 cell"></div>
+        <div class="aicell41 cell"></div>
+        <div class="aicell42 cell"></div>
+        <div class="aicell43 cell"></div>
+        <div class="aicell44 cell"></div>
+        <div class="aicell45 cell"></div>
+        <div class="aicell46 cell"></div>
+        <div class="aicell47 cell"></div>
+        
+      </div>
+      <div class="row7">
+        <div class="aicell48 cell"></div>
+        <div class="aicell49 cell"></div>
+        <div class="aicell50 cell"></div>
+        <div class="aicell51 cell"></div>
+        <div class="aicell52 cell"></div>
+        <div class="aicell53 cell"></div>
+        <div class="aicell54 cell"></div>
+        <div class="aicell55 cell"></div>
+        
+      </div>
+      <div class="row8">
+        <div class="aicell56 cell"></div>
+        <div class="aicell57 cell"></div>
+        <div class="aicell58 cell"></div>
+        <div class="aicell59 cell"></div>
+        <div class="aicell60 cell"></div>
+        <div class="aicell61 cell"></div>
+        <div class="aicell62 cell"></div>
+        <div class="aicell63 cell"></div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="box2">
+    <div class="prepMessage">Select ships to place on your battlefield</div>
+    <button class="directionButton">Change Direction</button>
+    <div class="shipContainer">
+      <div class="ship">
+        <h2>CaptianShip</h2>
+        <div class="captianShipContainer">
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+        </div>
+      </div>
+      <div class="ship">
+        <h2>BattleShip</h2>
+        <div class="battleShipContainer">
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+        </div>
+      </div>
+
+      <div class="ship">
+        <h2>Submarine</h2>
+        <div class="submarineContainer">
+          <div class="dcell"></div>
+          <div class="dcell"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
